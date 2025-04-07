@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson Plans | Coach Solo</title>
+  <title>Coach Solo | Youth Sports Instruction</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,23 +25,14 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    h2 {
-      color: #006400;
-    }
-    details {
-      margin-bottom: 1rem;
-      background: #f9f9f9;
-      padding: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
+    h2, h3 {
       color: #006400;
     }
     ul {
       padding-left: 1.5rem;
+    }
+    .section {
+      margin-bottom: 3rem;
     }
     .pdf-link {
       display: inline-block;
@@ -59,210 +50,73 @@
       font-size: 0.9rem;
       color: #666;
     }
+    @media (max-width: 768px) {
+      header, .container {
+        padding: 1rem;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav a {
+        margin: 0.3rem 0;
+        display: block;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .pdf-link {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+      ul {
+        padding-left: 1rem;
+      }
+    }
   </style>
 </head>
-
+<body>
   <nav style="background: #eee; padding: 1rem; text-align: center;">
     <a href="index.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Home</a>
     <a href="lesson-plans.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Lesson Plans</a>
     <a href="#contact" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Contact</a>
   </nav>
   <header>
-    <h1>Lesson Plans</h1>
-    <p>Structured sessions for all age groups and skill levels</p>
+    <h1>Coach Solo</h1>
+    <p>Youth Sports Instruction | Golf & Gymnastics | Movement Education</p>
   </header>
 
-  <div class="container">
-    <div class="plan">
-      <h2>Ages 4–6: Swing Basics Through Play</h2>
-      <details>
-        <summary>Beginner</summary>
-        <ul>
-          <li>Animal walks + balance beam stance</li>
-          <li>Foam stick swings and grip games</li>
-          <li>Ball toss into hula hoops</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Intermediate</summary>
-        <ul>
-          <li>Soft club use and beginner stance drills</li>
-          <li>Color zone chipping challenges</li>
-          <li>Freeze-frame swing game</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Advanced</summary>
-        <ul>
-          <li>Mini swing course with scoring</li>
-          <li>Timed accuracy relay</li>
-          <li>Guided peer observation (“What did you notice?”)</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-    </div>
+  <div class="container section">
+    <h2>Golf Lesson Plans</h2>
+    <p>Structured plans for teaching golf to youth and adults through progressive skill levels.</p>
+    <ul>
+      <li><strong>Ages 4–6:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Ages 7–9:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Ages 10–12:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Teens:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Adults:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Seniors:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+    </ul>
+  </div>
 
-    <div class="plan">
-      <h2>Ages 7–9: Posture and Precision</h2>
-      <details>
-        <summary>Beginner</summary>
-        <ul>
-          <li>Dynamic stretches and hand placement games</li>
-          <li>Foam club chipping with colored targets</li>
-          <li>Target ring step-up challenge</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Intermediate</summary>
-        <ul>
-          <li>Posture stick work with mirrors</li>
-          <li>Putts with zone scoring mat</li>
-          <li>Form relay (team-based challenge)</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Advanced</summary>
-        <ul>
-          <li>Setup and aim alignment drills</li>
-          <li>Full swing start with video feedback</li>
-          <li>Visual cue practice (mirror or partner)</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-    </div>
-
-    <div class="plan">
-      <h2>Ages 10–12: Form, Focus & Flow</h2>
-      <details>
-        <summary>Beginner</summary>
-        <ul>
-          <li>Warm-up jog and balance holds</li>
-          <li>Club path with ground marker lines</li>
-          <li>Target line games with cones</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Intermediate</summary>
-        <ul>
-          <li>Chipping distance ladder drill</li>
-          <li>Grip-pressure feedback drill</li>
-          <li>Mini-course station challenges</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Advanced</summary>
-        <ul>
-          <li>Shot visualization walkthrough</li>
-          <li>Video feedback and swing diagnostics</li>
-          <li>Pressure putts and timed play</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-    </div>
-
-    <div class="plan">
-      <h2>Teens (13–17): Power and Mental Game</h2>
-      <details>
-        <summary>Beginner</summary>
-        <ul>
-          <li>Mobility warm-up + club tempo swings</li>
-          <li>Simple setup-to-impact drills</li>
-          <li>Confidence-boost challenges</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Intermediate</summary>
-        <ul>
-          <li>Routine building and club tracking</li>
-          <li>Group challenges (3-club scramble)</li>
-          <li>Course simulation strategy</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Advanced</summary>
-        <ul>
-          <li>Power sequencing and weight transfer drills</li>
-          <li>Mental cue journaling</li>
-          <li>Mini match play with coaching reflection</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-    </div>
-
-    <div class="plan">
-      <h2>Adults: Functional Golf for Everyday Players</h2>
-      <details>
-        <summary>Beginner</summary>
-        <ul>
-          <li>Posture resets and grip alignment</li>
-          <li>Chip and pitch zone targeting</li>
-          <li>Slow-swing video review</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Intermediate</summary>
-        <ul>
-          <li>Club rotation and mid-iron setup</li>
-          <li>Tempo and timing games</li>
-          <li>On-course rehearsal (simulated scenarios)</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Advanced</summary>
-        <ul>
-          <li>Performance tracking sheets</li>
-          <li>Specialty shots (fade/draw intro)</li>
-          <li>Strategic play planning</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-    </div>
-
-    <div class="plan">
-      <h2>Seniors: Smooth Swings & Longevity</h2>
-      <details>
-        <summary>Beginner</summary>
-        <ul>
-          <li>Chair-assisted posture and footwork</li>
-          <li>Basic swing rhythm training</li>
-          <li>Club hold and release with soft cues</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Intermediate</summary>
-        <ul>
-          <li>Weight transfer with stability tools</li>
-          <li>Repetitive swing rhythm focus</li>
-          <li>Short-course loop setup</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-      <details>
-        <summary>Advanced</summary>
-        <ul>
-          <li>Visual aid drills (mirrors, bands)</li>
-          <li>Distance control practice</li>
-          <li>Mind-body awareness sessions (guided)</li>
-        </ul>
-        <a class="pdf-link" href="#">Download PDF</a>
-      </details>
-    </div>
-
+  <div class="container section">
+    <h2>Gymnastics Lesson Plans</h2>
+    <p>Skill-building routines, movement progressions, and games inspired by my work at KidsGymUSA.</p>
+    <ul>
+      <li><strong>Walking–Age 3 (Tots):</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Ages 4–6 (Preschool):</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Ages 7–9:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+      <li><strong>Ages 10–12:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
+    </ul>
   </div>
 
   <footer>
-    &copy; 2025 Coach Solomon Watkins | Tailored instruction for growth through golf.
+    &copy; 2025 Coach Solomon Watkins | Empowering youth through movement and mentorship.
   </footer>
 </body>
 </html>

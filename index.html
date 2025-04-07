@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coach Solo | Golf Instruction Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach Solo | Youth Sports Instruction</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
       background: #f4f4f4;
+      margin: 0;
       color: #333;
     }
     header {
-      background: #006400;
+      background-color: #006400;
       color: white;
-      padding: 2rem;
       text-align: center;
-    }
-    nav {
-      text-align: center;
-      background: #eee;
-      padding: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #006400;
-      font-weight: bold;
-    }
-    .section {
       padding: 2rem;
-      background: white;
-      margin: 1rem auto;
+    }
+    .container {
       max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     h2 {
+      color: #006400;
+    }
+    details {
+      margin-bottom: 1rem;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
       color: #006400;
     }
     ul {
       padding-left: 1.5rem;
     }
-    .quote {
-      font-style: italic;
-      margin: 1rem 0;
+    .pdf-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: #006400;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
     }
     footer {
       text-align: center;
@@ -52,65 +59,65 @@
       font-size: 0.9rem;
       color: #666;
     }
+    @media (max-width: 768px) {
+      header, .container {
+        padding: 1rem;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav a {
+        margin: 0.3rem 0;
+        display: block;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .pdf-link {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+      ul {
+        padding-left: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
+  <nav style="background: #eee; padding: 1rem; text-align: center;">
+    <a href="index.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Home</a>
+    <a href="lesson-plans.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Lesson Plans</a>
+    <a href="#contact" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Contact</a>
+  </nav>
   <header>
     <h1>Coach Solo</h1>
-    <p>Golf Instruction | Youth Development | Movement Integration</p>
+    <p>Youth Sports Instruction | Golf & Gymnastics | Movement Education</p>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="lesson-plans.html">Lesson Plans</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
+    <h2>Welcome</h2>
+    <p>Coach Solo blends dynamic instruction in both golf and gymnastics with a deep commitment to youth development. As a lead instructor at KidsGymUSA, I bring structured movement, fun progression, and intentional coaching that empowers children of all abilities.</p>
+    <p>This site features my curriculum and lesson plans for golf and other youth sports, designed to build physical literacy, discipline, and joy in movement.</p>
+  </div>
 
-  <section class="section">
-    <h2>Teaching Philosophy</h2>
-    <p>I believe golf is more than a sport—it's a reflection of life and growth. Like gardening, you reap what you sow. You don’t fail until you stop trying. My instruction emphasizes patience, effort, and character. I meet each student where they are and help them grow with intention.</p>
-  </section>
-
-  <section class="section">
-    <h2>Assessment Approach</h2>
-    <p>I assess student progress using both observation and data, with a focus on:</p>
+  <div class="container">
+    <h2>Highlighted Experience</h2>
     <ul>
-      <li><strong>Accuracy:</strong> Target precision and control</li>
-      <li><strong>Correlation:</strong> How body movement aligns with results</li>
-      <li><strong>Consistency:</strong> Repeatability of swing and posture</li>
-      <li><strong>Confidence:</strong> Belief and focus under challenge</li>
+      <li><strong>KidsGymUSA Coach:</strong> Teaching ages walking–12, focusing on strength, flexibility, coordination, and fun</li>
+      <li><strong>Golf Instruction:</strong> Character-based golf coaching with play-based skill progression for ages 4–17 and adults</li>
+      <li><strong>Play-Build-Perform™ Method:</strong> Combines gymnastics fundamentals with skill-specific sports training</li>
+      <li><strong>Curriculum Design:</strong> Developed structured lesson plans aligned with First Tee and physical literacy models</li>
     </ul>
-  </section>
-
-  <section class="section">
-    <h2>Life Skills Through Golf</h2>
-    <p>Golf teaches emotional control, responsibility, and resilience. These qualities are integrated into each session through creative games, self-reflection, and intentional feedback.</p>
-    <p class="quote">“Golf is a quiet teacher. It teaches you to breathe, think, and try again.”</p>
-  </section>
-
-  <section class="section">
-    <h2>Transferrable Coaching Experience</h2>
-    <p>As a gymnastics coach at KidsGymUSA, I work with children as young as walking age up to 12 years old. I bring movement education, energy, and structure to every lesson. I know how to build trust, maintain engagement, and teach through body awareness and rhythm—all of which enhance my golf instruction style.</p>
-  </section>
-
-  <section class="section">
-    <h2>Special Projects</h2>
-    <ul>
-      <li><strong>Play-Build-Perform™</strong> – A structured youth development framework blending gymnastics with golf fundamentals</li>
-      <li><strong>3D-Printable Modular Golf Set</strong> – Designed for portability, safety, and accessible practice anywhere</li>
-      <li><strong>Lesson Plans & Drills</strong> – Developed age-based and character-driven practice plans aligned with First Tee values</li>
-    </ul>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p><strong>Name:</strong> Solomon Watkins</p>
-    <p><strong>Phone:</strong> (404) 789-9960</p>
-    <p><strong>Email:</strong> <a href="mailto:growthroughgolf@gmail.com">growthroughgolf@gmail.com</a></p>
-  </section>
+  </div>
 
   <footer>
-    &copy; 2025 Coach Solomon Watkins | Designed to inspire growth on and off the course.
+    &copy; 2025 Coach Solomon Watkins | Empowering youth through movement and mentorship.
   </footer>
 </body>
 </html>
