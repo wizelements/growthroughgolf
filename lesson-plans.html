@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coach Solo | Youth Sports Instruction</title>
+  <title>Lesson Plans | Coach Solo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,14 +25,23 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    h2, h3 {
+    h2 {
+      color: #006400;
+    }
+    details {
+      margin-bottom: 1rem;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
       color: #006400;
     }
     ul {
       padding-left: 1.5rem;
-    }
-    .section {
-      margin-bottom: 3rem;
     }
     .pdf-link {
       display: inline-block;
@@ -50,34 +59,6 @@
       font-size: 0.9rem;
       color: #666;
     }
-    @media (max-width: 768px) {
-      header, .container {
-        padding: 1rem;
-      }
-      nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-      nav a {
-        margin: 0.3rem 0;
-        display: block;
-      }
-      h1 {
-        font-size: 1.6rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      .pdf-link {
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-      }
-      ul {
-        padding-left: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
@@ -86,33 +67,63 @@
     <a href="lesson-plans.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Lesson Plans</a>
     <a href="#contact" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Contact</a>
   </nav>
-  <header>
-    <h1>Coach Solo</h1>
-    <p>Youth Sports Instruction | Golf & Gymnastics | Movement Education</p>
+  
+    <p><strong>Access to PDFs is available through one of the following:</strong></p>
+    <ul>
+      <li>Purchase of a $60 private 30-minute session</li>
+      <li>Volunteering with <strong>Gratitude Gardens</strong> (inquire for details)</li>
+      <li>Active volunteers with <strong>KidsGymUSA</strong></li>
+    </ul>
+    <p>Please reach out via the contact page to verify access or schedule a session.</p>
+    <p>Structured sessions for all age groups and skill levels</p>
   </header>
 
-  <div class="container section">
+  <div class="container">
     <h2>Golf Lesson Plans</h2>
-    <p>Structured plans for teaching golf to youth and adults through progressive skill levels.</p>
-    <ul>
-      <li><strong>Ages 4–6:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Ages 7–9:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Ages 10–12:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Teens:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Adults:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Seniors:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-    </ul>
+    <details>
+      <summary>Ages 4–6</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Ages 7–9</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Ages 10–12</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Teens (13–17)</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Adults</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Seniors</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
   </div>
 
-  <div class="container section">
+  <div class="container">
     <h2>Gymnastics Lesson Plans</h2>
-    <p>Skill-building routines, movement progressions, and games inspired by my work at KidsGymUSA.</p>
-    <ul>
-      <li><strong>Walking–Age 3 (Tots):</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Ages 4–6 (Preschool):</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Ages 7–9:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-      <li><strong>Ages 10–12:</strong> <a class="pdf-link" href="#">Download PDF</a></li>
-    </ul>
+    <details>
+      <summary>Walking–Age 3 (Tots)</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Ages 4–6 (Preschool)</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Ages 7–9</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
+    <details>
+      <summary>Ages 10–12</summary>
+      <a class="pdf-link" href="#">Download PDF</a>
+    </details>
   </div>
 
   <footer>
