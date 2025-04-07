@@ -28,11 +28,30 @@
     h2 {
       color: #006400;
     }
+    details {
+      margin-bottom: 1rem;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #006400;
+    }
     ul {
       padding-left: 1.5rem;
     }
-    .plan {
-      margin-bottom: 2rem;
+    .pdf-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: #006400;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
     }
     footer {
       text-align: center;
@@ -45,69 +64,196 @@
 <body>
   <header>
     <h1>Lesson Plans</h1>
-    <p>Structured sessions for all age groups</p>
+    <p>Structured sessions for all age groups and skill levels</p>
   </header>
 
   <div class="container">
     <div class="plan">
       <h2>Ages 4–6: Swing Basics Through Play</h2>
-      <ul>
-        <li><strong>Warm-Up:</strong> Animal walks + balance beam stance</li>
-        <li><strong>Skill Focus:</strong> Holding the club, swing shape with foam sticks</li>
-        <li><strong>Game:</strong> Target toss with soft balls</li>
-        <li><strong>Reflection:</strong> “What was fun today?”</li>
-      </ul>
+      <details>
+        <summary>Beginner</summary>
+        <ul>
+          <li>Animal walks + balance beam stance</li>
+          <li>Foam stick swings and grip games</li>
+          <li>Ball toss into hula hoops</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Intermediate</summary>
+        <ul>
+          <li>Soft club use and beginner stance drills</li>
+          <li>Color zone chipping challenges</li>
+          <li>Freeze-frame swing game</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Advanced</summary>
+        <ul>
+          <li>Mini swing course with scoring</li>
+          <li>Timed accuracy relay</li>
+          <li>Guided peer observation (“What did you notice?”)</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
     </div>
 
     <div class="plan">
       <h2>Ages 7–9: Posture and Precision</h2>
-      <ul>
-        <li><strong>Warm-Up:</strong> Dynamic stretches + club yoga</li>
-        <li><strong>Skill Focus:</strong> Short chip shots, swing rhythm</li>
-        <li><strong>Game:</strong> Hit the hoop challenge (accuracy rings)</li>
-        <li><strong>Reflection:</strong> “What helped you improve today?”</li>
-      </ul>
+      <details>
+        <summary>Beginner</summary>
+        <ul>
+          <li>Dynamic stretches and hand placement games</li>
+          <li>Foam club chipping with colored targets</li>
+          <li>Target ring step-up challenge</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Intermediate</summary>
+        <ul>
+          <li>Posture stick work with mirrors</li>
+          <li>Putts with zone scoring mat</li>
+          <li>Form relay (team-based challenge)</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Advanced</summary>
+        <ul>
+          <li>Setup and aim alignment drills</li>
+          <li>Full swing start with video feedback</li>
+          <li>Visual cue practice (mirror or partner)</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
     </div>
 
     <div class="plan">
       <h2>Ages 10–12: Form, Focus & Flow</h2>
-      <ul>
-        <li><strong>Warm-Up:</strong> Jog + mobility flow</li>
-        <li><strong>Skill Focus:</strong> Full swing control, directional aiming</li>
-        <li><strong>Game:</strong> Par 3 simulation (cones and scoring)</li>
-        <li><strong>Reflection:</strong> Goal setting for next practice</li>
-      </ul>
+      <details>
+        <summary>Beginner</summary>
+        <ul>
+          <li>Warm-up jog and balance holds</li>
+          <li>Club path with ground marker lines</li>
+          <li>Target line games with cones</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Intermediate</summary>
+        <ul>
+          <li>Chipping distance ladder drill</li>
+          <li>Grip-pressure feedback drill</li>
+          <li>Mini-course station challenges</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Advanced</summary>
+        <ul>
+          <li>Shot visualization walkthrough</li>
+          <li>Video feedback and swing diagnostics</li>
+          <li>Pressure putts and timed play</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
     </div>
 
     <div class="plan">
       <h2>Teens (13–17): Power and Mental Game</h2>
-      <ul>
-        <li><strong>Warm-Up:</strong> Resistance band swings, tempo drills</li>
-        <li><strong>Skill Focus:</strong> Distance control, pre-shot routines, strategy</li>
-        <li><strong>Game:</strong> 3-club challenge or mental focus scrimmage</li>
-        <li><strong>Reflection:</strong> Journal one breakthrough or takeaway</li>
-      </ul>
+      <details>
+        <summary>Beginner</summary>
+        <ul>
+          <li>Mobility warm-up + club tempo swings</li>
+          <li>Simple setup-to-impact drills</li>
+          <li>Confidence-boost challenges</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Intermediate</summary>
+        <ul>
+          <li>Routine building and club tracking</li>
+          <li>Group challenges (3-club scramble)</li>
+          <li>Course simulation strategy</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Advanced</summary>
+        <ul>
+          <li>Power sequencing and weight transfer drills</li>
+          <li>Mental cue journaling</li>
+          <li>Mini match play with coaching reflection</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
     </div>
 
     <div class="plan">
       <h2>Adults: Functional Golf for Everyday Players</h2>
-      <ul>
-        <li><strong>Warm-Up:</strong> Joint mobility + posture resets</li>
-        <li><strong>Skill Focus:</strong> Swing consistency, body-friendly technique</li>
-        <li><strong>Game:</strong> Tempo challenge + pressure putts</li>
-        <li><strong>Reflection:</strong> “What feels better now than before?”</li>
-      </ul>
+      <details>
+        <summary>Beginner</summary>
+        <ul>
+          <li>Posture resets and grip alignment</li>
+          <li>Chip and pitch zone targeting</li>
+          <li>Slow-swing video review</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Intermediate</summary>
+        <ul>
+          <li>Club rotation and mid-iron setup</li>
+          <li>Tempo and timing games</li>
+          <li>On-course rehearsal (simulated scenarios)</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Advanced</summary>
+        <ul>
+          <li>Performance tracking sheets</li>
+          <li>Specialty shots (fade/draw intro)</li>
+          <li>Strategic play planning</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
     </div>
 
     <div class="plan">
       <h2>Seniors: Smooth Swings & Longevity</h2>
-      <ul>
-        <li><strong>Warm-Up:</strong> Chair stretches + tempo breathing</li>
-        <li><strong>Skill Focus:</strong> Smooth motion, posture alignment</li>
-        <li><strong>Game:</strong> Slow-motion chipping contest</li>
-        <li><strong>Reflection:</strong> “What part of your swing do you trust most?”</li>
-      </ul>
+      <details>
+        <summary>Beginner</summary>
+        <ul>
+          <li>Chair-assisted posture and footwork</li>
+          <li>Basic swing rhythm training</li>
+          <li>Club hold and release with soft cues</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Intermediate</summary>
+        <ul>
+          <li>Weight transfer with stability tools</li>
+          <li>Repetitive swing rhythm focus</li>
+          <li>Short-course loop setup</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
+      <details>
+        <summary>Advanced</summary>
+        <ul>
+          <li>Visual aid drills (mirrors, bands)</li>
+          <li>Distance control practice</li>
+          <li>Mind-body awareness sessions (guided)</li>
+        </ul>
+        <a class="pdf-link" href="#">Download PDF</a>
+      </details>
     </div>
+
   </div>
 
   <footer>
