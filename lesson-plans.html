@@ -233,31 +233,35 @@
     &copy; 2025 Coach Solomon Watkins | Empowering youth through movement and mentorship.
   </footer>
 
-  <!-- ChatGPT Widget Placeholder -->
-  <div style="position:fixed;bottom:20px;right:20px;width:300px;padding:1rem;border:2px solid #006400;border-radius:10px;background:white;box-shadow:0 0 10px rgba(0,0,0,0.2);">
-    <p style="color:#006400;font-weight:bold;">CoachGPT Assistant</p>
-    <input id="chat-input" style="width:100%;padding:0.5rem;" placeholder="Ask CoachGPT...">
-    <button onclick="sendMessage()" style="width:100%;padding:0.5rem;margin-top:0.5rem;background:#006400;color:white;border:none;border-radius:5px;">Send</button>
-    <div id="chat-response" style="margin-top:0.5rem;"></div>
-  </div>
+  <!-- Updated Chat Widget -->
+<div style="position:fixed;bottom:20px;right:20px;width:300px;padding:1rem;border:2px solid #006400;border-radius:10px;background:white;box-shadow:0 0 10px rgba(0,0,0,0.2);">
+  <p style="color:#006400;font-weight:bold;">CoachGPT Assistant</p>
+  <input id="chat-input" style="width:100%;padding:0.5rem;" placeholder="Ask CoachGPT...">
+  <button onclick="sendMessage()" style="width:100%;padding:0.5rem;margin-top:0.5rem;background:#006400;color:white;border:none;border-radius:5px;">Send</button>
+  <div id="chat-response" style="margin-top:0.5rem;"></div>
+</div>
 
-  <script>
-    async function sendMessage() {
-      const input = document.getElementById('chat-input').value;
-      const responseDiv = document.getElementById('chat-response');
-      responseDiv.innerText = 'Thinking...';
-      try {
-        const response = await fetch('/api/chat', {
-          method: 'POST',
-          headers: {'Content-Type':'application/json'},
-          body: JSON.stringify({ message: input })
-        });
-        const data = await response.json();
-        responseDiv.innerText = data.reply || 'Error: ' + data.error;
-      } catch(e) {
-        responseDiv.innerText = 'An error occurred, please try again.';
-      }
-    }
-  </script>
+<script>
+async function sendMessage() {
+  const input = document.getElementById('chat-input').value;
+  const responseDiv = document.getElementById('chat-response');
+  responseDiv.innerText = 'Thinking...';
+
+  try {
+    // ✅ Correctly linked to your custom GPT endpoint
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ message: input })
+    });
+
+    const data = await response.json();
+    responseDiv.innerText = data.reply || ('Error: ' + data.error);
+  } catch (error) {
+    responseDiv.innerText = 'An error occurred. Please try again later.';
+  }
+}
+</script>
+
 </body>
 </html>
