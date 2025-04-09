@@ -64,37 +64,38 @@
         padding: 1rem;
       }
       nav {
-        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
       }
       nav a {
-        margin: 0.3rem 0;
-        display: block;
+        margin: 0.5rem 0;
       }
-      h1 {
-        font-size: 1.6rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      .pdf-link {
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-      }
-      ul {
-        padding-left: 1rem;
-      }
+    }
+    /* Chat Widget Styles */
+    #chat-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      padding: 1rem;
+      border: 2px solid #006400;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    #chat-response {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <nav style="background: #eee; padding: 1rem; text-align: center;">
-    <a href="index.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Home</a>
-    <a href="lesson-plans.html" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Lesson Plans</a>
-    <a href="#contact" style="margin: 0 1rem; text-decoration: none; color: #006400; font-weight: bold;">Contact</a>
+    <a href="index.html" style="margin: 0 1rem; color: #006400; font-weight: bold;">Home</a>
+    <a href="lesson-plans.html" style="margin: 0 1rem; color: #006400; font-weight: bold;">Lesson Plans</a>
+    <a href="#contact" style="margin: 0 1rem; color: #006400; font-weight: bold;">Contact</a>
   </nav>
+
   <header>
     <h1>Coach Solo</h1>
     <p>Youth Sports Instruction | Golf & Gymnastics | Movement Education</p>
@@ -102,22 +103,67 @@
 
   <div class="container">
     <h2>Welcome</h2>
-    <p>Coach Solo blends dynamic instruction in both golf and gymnastics with a deep commitment to youth development. As a lead instructor at KidsGymUSA, I bring structured movement, fun progression, and intentional coaching that empowers children of all abilities.</p>
-    <p>This site features my curriculum and lesson plans for golf and other youth sports, designed to build physical literacy, discipline, and joy in movement.</p>
+    <p>Coach Solo blends dynamic instruction in golf and gymnastics with a deep commitment to youth development. As a lead instructor at KidsGymUSA, I bring structured movement, fun progression, and intentional coaching that empowers children of all abilities.</p>
+    <p>This site features my curriculum and lesson plans designed to build physical literacy, discipline, and joy in movement.</p>
   </div>
 
   <div class="container">
     <h2>Highlighted Experience</h2>
     <ul>
-      <li><strong>KidsGymUSA Coach:</strong> Teaching ages walking–12, focusing on strength, flexibility, coordination, and fun</li>
-      <li><strong>Golf Instruction:</strong> Character-based golf coaching with play-based skill progression for ages 4–17 and adults</li>
-      <li><strong>Play-Build-Perform™ Method:</strong> Combines gymnastics fundamentals with skill-specific sports training</li>
-      <li><strong>Curriculum Design:</strong> Developed structured lesson plans aligned with First Tee and physical literacy models</li>
+      <li><strong>KidsGymUSA Coach:</strong> Ages walking–12, focusing on strength, flexibility, coordination, and fun.</li>
+      <li><strong>Golf Instruction:</strong> Character-based coaching for ages 4–17 and adults, aligned with First Tee values.</li>
+      <li><strong>Play-Build-Perform™:</strong> Combining gymnastics fundamentals with skill-specific sports training.</li>
+      <li><strong>Curriculum Design:</strong> Structured lesson plans aligned with physical literacy models.</li>
     </ul>
+  </div>
+
+  <div class="container">
+    <h2>Access Lesson Plans</h2>
+    <p><strong>PDF Access requires one of the following:</strong></p>
+    <ul>
+      <li>$60 private 30-minute session booking</li>
+      <li>Volunteering with <strong>Gratitude Gardens</strong> (contact for details)</li>
+      <li>Volunteering at <strong>KidsGymUSA</strong></li>
+    </ul>
+    <p>Please use the contact form below for inquiries.</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Coach Solo</h2>
+    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+      <label>Name:</label>
+      <input type="text" name="name" required style="padding:0.5rem; border-radius:5px; border:1px solid #ccc;">
+      <label>Email:</label>
+      <input type="email" name="email" required style="padding:0.5rem; border-radius:5px; border:1px solid #ccc;">
+      <label>Message:</label>
+      <textarea name="message" rows="5" required style="padding:0.5rem; border-radius:5px; border:1px solid #ccc;"></textarea>
+      <button type="submit" style="background:#006400; color:white; padding:0.75rem; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
+    </form>
   </div>
 
   <footer>
     &copy; 2025 Coach Solomon Watkins | Empowering youth through movement and mentorship.
   </footer>
+
+  <div id="chat-widget">
+    <input type="text" id="chat-input" placeholder="Ask CoachGPT..." style="width: 100%; padding:0.5rem;">
+    <button onclick="sendMessage()" style="margin-top:0.5rem;background:#006400;color:white;padding:0.5rem;width:100%;border:none;border-radius:5px;">Send</button>
+    <div id="chat-response"></div>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById('chat-input').value;
+      const responseDiv = document.getElementById('chat-response');
+      responseDiv.innerText = 'Thinking...';
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ message: input })
+      });
+      const data = await response.json();
+      responseDiv.innerText = data.reply || 'Error: ' + data.error;
+    }
+  </script>
 </body>
 </html>
