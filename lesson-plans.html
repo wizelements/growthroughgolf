@@ -204,5 +204,46 @@
     document.body.appendChild(chatWidget);
   })();
 </script>
+<script>
+  (function() {
+    const chatContainer = document.createElement('div');
+    chatContainer.style.position = 'fixed';
+    chatContainer.style.bottom = '20px';
+    chatContainer.style.right = '20px';
+    chatContainer.style.zIndex = '1000';
+    chatContainer.style.width = '350px';
+    chatContainer.style.height = '500px';
+    chatContainer.style.border = '2px solid #006400';
+    chatContainer.style.borderRadius = '10px';
+    chatContainer.style.overflow = 'hidden';
+    chatContainer.innerHTML = `
+      <iframe 
+        src="https://chat.openai.com/chat" 
+        width="100%" 
+        height="100%" 
+        style="border: none;">
+      </iframe>
+    `;
+    document.body.appendChild(chatContainer);
+  })();
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const gptCoachInfo = {
+      role: 'assistant',
+      name: 'CoachGPT',
+      intro: 'Hi! I’m CoachGPT — here to guide you with tailored insights on youth development, golf strategy, gymnastics technique, and program access with Coach Solo.',
+      skills: [
+        'Golf Instruction (All Ages)',
+        'Gymnastics Coaching (Walking–Age 12)',
+        'First Tee Principles & Curriculum',
+        'Play-Build-Perform™ Coaching Framework',
+        'Session Access + Volunteer Info'
+      ]
+    };
+    console.log('CoachGPT ready to support:', gptCoachInfo);
+  });
+</script>
 </body>
 </html>
